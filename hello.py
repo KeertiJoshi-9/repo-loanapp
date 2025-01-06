@@ -13,7 +13,7 @@ st.markdown("This is a **bold** text.")
 
 import yfinance as yf
 
-tick_data = yf.Ticker("MSFT")
-tdf = tick_data.history(period='1d', start_date='2023-01-01', end_date = '2024-01-01')
+tick_data = yf.Ticker("GOOG")
+tdf = tick_data.history(period='1d', start ='2023-01-01', end = '2024-01-01')
 
 st.dataframe(tdf)
